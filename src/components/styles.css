@@ -1,0 +1,10 @@
+.inpytStyle {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.comments{
+   padding: 10px;
+}
