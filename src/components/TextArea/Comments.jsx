@@ -8,7 +8,8 @@ export const Comments = () => {
 
   return (
    <div>
-    <textarea value={valueComment} onChange={changeComments}/>
+    <h1>Ваши пожелания:</h1>
+    <textarea className="comments" value={valueComment} onChange={changeComments}/>
    </div>
   );
 };

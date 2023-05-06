@@ -1,10 +1,52 @@
 .inpytStyle {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
 
 .comments{
-   padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6e6e70;
+  
+
+  width: 226px;
+  min-height: 65px;
+  max-height: 135px;
+  letter-spacing: 1.3px;
+  margin-left: 5px;
+
+  display: flex;
+  flex-direction: column;
+  border: solid 1.5px #c6ced7;
+  border-radius: 3px;
+  resize: vertical;
+  outline: none;
+  text-indent: 5px;
+  padding: 5px;
+}
+
+.dataTime {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  text-indent: 10px;
+  color: #6e6e70;
+
+  width: 226px;
+  height: 45px;
+  margin-left: 5px;
+
+  display: flex;
+  flex-direction: column;
+  border: solid 1.5px #c6ced7;
+  border-radius: 5px;
+  resize: vertical;
+  outline: none;
+  letter-spacing: 1.3px;
+  cursor: pointer;
 }
