@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles.css";
 
-export const Comments = () => {
+export const Comments = ({children, ...props}) => {
   const [valueComment, setValueComment] = React.useState("");
 
   const changeComments = (ev) => [setValueComment(ev.target.value)];

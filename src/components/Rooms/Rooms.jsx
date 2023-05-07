@@ -15,7 +15,7 @@ const options = [
     {value: '10', label: 'Переговорная №10'},
 ]
 
-export const SelectRooms = () => {
+export const SelectRooms = ({children, ...props}) => {
     const [currentRoom, setCurrentRoom] = React.useState('')
 
     const getValueRoom = () => {
@@ -34,6 +34,7 @@ export const SelectRooms = () => {
                 options={options}
                 value={getValueRoom()}
                 onChange={onChangeRoom}
+                isSearchable={false}
             />
         </div>
     )

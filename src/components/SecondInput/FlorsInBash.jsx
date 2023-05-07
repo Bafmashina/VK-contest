@@ -32,7 +32,7 @@ const options = [
 
 const isMulti = [];
 
-export const FlorsInBash = () => {
+export const FlorsInBash = ({children, ...props}) => {
   const [currentFlor, setCurrentFlor] = React.useState("");
 
   const getValueFlor = () => {

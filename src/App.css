@@ -6,23 +6,6 @@
   padding: 0;
 }
 
-.app{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-form{
-  width: 300px;
-  padding: 32px;
-  border-radius: 10px;
-  box-shadow: 5px 3px 25px #a7b8d1;
-  background-size: cover;
-  background-position: center;
-  letter-spacing: 1px;
-}
-
 h1{
   font-family: 'Montserrat', sans-serif;
   text-align: justify;
@@ -35,21 +18,6 @@ h1{
   font-weight: 700;
   padding: 5px;
   font-size: 20px;
-}
-
-button {
-  width: auto;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  background-color:#0071f0;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-top: 22px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
 }
 
 button:focus, button:hover {
