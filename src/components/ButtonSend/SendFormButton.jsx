@@ -1,14 +1,20 @@
 import React from "react";
 import "../styles.css";
+import { Button } from "@mui/base";
 
-export const SendFormButton = ({children, ...props}) => {
-    const sendInform = () => {
-        console.log()
-    }
+export const SendFormButton = ({ children, ...props }) => {
+  // const sendInform = (event) => {
+  //   onSubmit()
+  // };
 
-    return(
-        <>
-            <button className="buttonForm" onClick={sendInform}>Отправить</button>
-        </>
-    )
-}
+  return (
+    <Button
+      type="submit"
+      className="buttonForm"
+      // onClick={}
+      {...props}
+    >
+      {children}
+    </Button>
+  );
+};

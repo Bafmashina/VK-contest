@@ -3,6 +3,6 @@ import "../styles.css";
 
 export const ClearAllButton = ({children, ...props}) => {
     return(
-        <button className="clearAllbutton">Отчистить</button>
+        <button className="clearAllbutton">Очистить</button>
     )
 }

@@ -15,9 +15,10 @@
 
   width: 226px;
   min-height: 65px;
-  max-height: 135px;
+  max-height: 250px;
   letter-spacing: 1.3px;
   margin-left: 5px;
+  margin-top: 20px;
 
   display: flex;
   flex-direction: column;

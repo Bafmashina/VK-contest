@@ -1,15 +1,19 @@
-import React from "react";
+import React, { forwardRef } from "react";
+import TextField from "@mui/material/TextField";
+import InputLabel from "@mui/material/InputLabel";
 import "../styles.css";
 
-export const Comments = ({children, ...props}) => {
-  const [valueComment, setValueComment] = React.useState("");
+export const Comments = forwardRef((props, ref) => {
+  // const [valueComment, setValueComment] = React.useState("");
 
-  const changeComments = (ev) => [setValueComment(ev.target.value)];
+  // const handleChange = (event) => {
+  //   setValueComment(event.target.value);
+  // };
 
   return (
-   <div>
-    <h1>Ваши пожелания:</h1>
-    <textarea className="comments" value={valueComment} onChange={changeComments}/>
-   </div>
+    <div className="comments">
+      <InputLabel id="demo-simple-select-label">Коментарии</InputLabel>
+      <TextField multiline rows={4} {...props} inputRef={ref} />
+    </div>
   );
-};
+});

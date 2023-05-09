@@ -1,35 +1,29 @@
-import Select from "react-select";
-import React from "react";
+import Select from "@mui/material/Select";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import React, { forwardRef } from "react";
 import "../styles.css";
 
-const options = [
-  { value: "A", label: "Башня: A" },
-  { value: "B", label: "Башня: Б" },
-];
+export const SelectBash = forwardRef((props, ref) => {
+  const [bash, setBash] = React.useState("");
 
-export const SelectBash = ({ children, ...props }) => {
-  const [currentBush, setCurrentBush] = React.useState("");
-
-  const getValueBash = () => {
-    return currentBush
-      ? options.find((bush) => bush.value === currentBush)
-      : "";
-  };
-
-  const onChangeBush = (newBash) => {
-    setCurrentBush(newBash.value);
+  const handleChange = (event) => {
+    setBash(event.target.value);
   };
 
   return (
-    <div className="inpytStyle">
-      <h1>Башня:</h1>
+    <div className='inpytStyle'>
+      <InputLabel id="demo-simple-select-label">Башня</InputLabel>
       <Select
-        placeholder="выбирите башню"
-        value={getValueBash()}
-        onChange={onChangeBush}
-        options={options}
-        isSearchable={false}
-      />
+      label="Время"
+        {...props}
+        inputRef={ref}
+        onChange={handleChange}
+        value={bash}
+      >
+        <MenuItem value={"1"}>Башня: 1</MenuItem>
+        <MenuItem value={"2"}>Башня: 2</MenuItem>
+      </Select>
     </div>
   );
-};
+});
