@@ -1,6 +1,4 @@
 import React, { forwardRef } from "react";
-import "../styles.css";
-
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -19,7 +17,7 @@ export const TimeValue = forwardRef((props, ref) => {
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DemoContainer components={["DatePicker"]}>
           <TimePicker
-          label="Время"
+            label="Время"
             value={currentTime}
             onChange={handleChangeDate}
             inputRef={ref}

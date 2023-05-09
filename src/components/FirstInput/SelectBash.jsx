@@ -15,7 +15,7 @@ export const SelectBash = forwardRef((props, ref) => {
     <div className='inpytStyle'>
       <InputLabel id="demo-simple-select-label">Башня</InputLabel>
       <Select
-      label="Время"
+        label="Время"
         {...props}
         inputRef={ref}
         onChange={handleChange}

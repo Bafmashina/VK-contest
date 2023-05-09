@@ -1,8 +1,14 @@
 import React from "react";
 import "../styles.css";
 
-export const ClearAllButton = ({children, ...props}) => {
-    return(
-        <button className="clearAllbutton">Очистить</button>
-    )
-}
+export const ClearAllButton = ({ ...props }) => {
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
+  return (
+    <button onClick={refreshPage} {...props} className="clearAllbutton">
+      Очистить
+    </button>
+  );
+};

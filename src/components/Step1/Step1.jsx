@@ -11,22 +11,22 @@ import { useForm } from "react-hook-form";
 import { TimeValue } from "../TimeValue/TimeValue";
 
 
-
 export const Step1 = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
 
+
   return (
       <MainContainer>
         <Form onSubmit={handleSubmit(onSubmit)}>
-        <SelectBash {...register("Башня")}/>
-        <FlorsInBash {...register("Этаж")}/>
-        <SelectRooms {...register("Переговорная")}/>
-        <DataTime {...register("Дата")}/>
-        <TimeValue {...register("Время")}/>
-        <Comments {...register("Коментарии")}/>
-        <SendFormButton>Отправить</SendFormButton>
-        <ClearAllButton />
+        <SelectBash {...register("bash")}/>
+        <FlorsInBash {...register("flor")}/>
+        <SelectRooms {...register("room")}/>
+        <DataTime {...register("data")}/>
+        <TimeValue {...register("time")}/>
+        <Comments {...register("comments")}/>
+        <SendFormButton />
+        <ClearAllButton/>
       </Form>
       </MainContainer>
   );
