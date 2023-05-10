@@ -10,11 +10,10 @@ import { ClearAllButton } from "../ButtonClear/ClearAllButton";
 import { useForm } from "react-hook-form";
 import { TimeValue } from "../TimeValue/TimeValue";
 
-
 export const Step1 = () => {
   const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
-
+  const onSubmit = (data) => console.log(JSON.stringify(data));
+  
 
   return (
       <MainContainer>

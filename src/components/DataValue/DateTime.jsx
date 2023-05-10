@@ -19,7 +19,7 @@ export const DataTime = forwardRef((props, ref) => {
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DemoContainer components={["DatePicker"]}>
           <DatePicker
-          label="Дата"
+            label="Дата"
             value={currentDate}
             onChange={handleChangeDate}
             inputRef={ref}
