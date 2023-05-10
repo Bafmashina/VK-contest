@@ -1,7 +1,9 @@
+import React, { forwardRef } from "react";
+
 import Select from "@mui/material/Select";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import React, { forwardRef } from "react";
+
 import "../styles.css";
 
 export const SelectRooms = forwardRef((props, ref) => {
@@ -12,14 +14,9 @@ export const SelectRooms = forwardRef((props, ref) => {
   };
 
   return (
-    <div className='inpytStyle'>
+    <div className="inpytStyle">
       <InputLabel id="demo-simple-select-label">Переговорная</InputLabel>
-      <Select
-        {...props}
-        inputRef={ref}
-        onChange={handleChange}
-        value={bash}
-      >
+      <Select {...props} inputRef={ref} onChange={handleChange} value={bash}>
         <MenuItem value={"1"}>Кабинет № 1</MenuItem>
         <MenuItem value={"2"}>Кабинет № 2</MenuItem>
         <MenuItem value={"3"}>Кабинет № 3</MenuItem>

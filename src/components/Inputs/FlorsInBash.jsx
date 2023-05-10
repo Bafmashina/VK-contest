@@ -1,30 +1,22 @@
+import React, { forwardRef } from "react";
+
 import Select from "@mui/material/Select";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import React, { forwardRef } from "react";
+
 import "../styles.css";
 
-
-
-
 export const FlorsInBash = forwardRef((props, ref) => {
-
   const [bash, setBash] = React.useState("");
 
   const handleChange = (event) => {
     setBash(event.target.value);
   };
-  
 
   return (
-    <div className='inpytStyle'>
+    <div className="inpytStyle">
       <InputLabel id="demo-simple-select-label">Этаж</InputLabel>
-      <Select
-        {...props}
-        inputRef={ref}
-        onChange={handleChange}
-        value={bash}
-      >
+      <Select {...props} inputRef={ref} onChange={handleChange} value={bash}>
         <MenuItem value={"3"}>3 этаж</MenuItem>
         <MenuItem value={"4"}>4 этаж</MenuItem>
         <MenuItem value={"5"}>5 этаж</MenuItem>
